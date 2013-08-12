@@ -4,8 +4,10 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no">
 		<!--TODO:script와 css는 절대경로로 하였음...이거 jstl처럼 c:url같은 것 없는지 조사 -->
-		<script src="/js/lib/alopex/alopex_controller.js"></script>
-		<link rel="stylesheet" type="text/css" href="/css/main.css" />
+		<!-- www를 어떻게 포함해야 할지? 상대경로는 안됨(요청오는 url에 따라 달라짐) -->
+		<!-- alopex_controller내부에서 경로의 하드코딩 존재함: 반드시 /alopex/script에 있어야 하는 등. -->
+		<script src="/www/js/lib/alopex/alopex_controller.js"></script>
+		<link rel="stylesheet" type="text/css" href="/www/css/app/main.css" />
 	</head>
 	<body>
 		<div class="title-bar">

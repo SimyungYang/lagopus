@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Welcome to Alopex Lagopus</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+		<script>
+			function load(){
+			  var config = (<%-JSON.stringify(alopexConfig)%>);
+			  var pages = config.alopexconfig.pageList[0].page;
+			  var html = '<ul>';
+			  for (idx in pages){
+			    var page = pages[idx];
+			    var url = page.$.uri;
+			    
+			    //TODO view와 html확장자 제대로 정책 세울 것.
+			    var actualUrl = 'www' + url.substring(0, url.lastIndexOf('.')) + '.view';
+			    
+			    html += '<li><a href="' + actualUrl + '">' + actualUrl +  '</a></li>';
+			  }
+			  
+			  html += '</ul>';
+			  
+			  var p = document.getElementById('pages');
+			  p.innerHTML = html;
+			}
+		</script>
+    </head>
+    <body onload="load()">
+        <h1>Welcome to Alopex Lagopus</h1>
+		<div id="pages">
+		</div>
+       
+    </body>
+</html>
