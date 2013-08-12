@@ -1,0 +1,12 @@
+/*
+ * TODO
+ * 설정파일 
+ * 포트, 경로 등 설정
+ * generator, template engine, project creator등도 확장 가능하면 좋겠음(punch처럼...)
+ */
+{
+  "output_dir": "output",
+  "server": { 
+    "port": 9009
+  }
+}

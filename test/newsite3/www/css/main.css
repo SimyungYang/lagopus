@@ -1,0 +1,19 @@
+@CHARSET "UTF-8";
+
+body{
+	margin:0;
+	padding:0;
+}
+
+.title-bar{
+	margin:0;
+	background:#000;
+	color:#fff;
+	font-size:30px;
+	height:50px;
+	text-align:center;
+}
+
+.main-content{
+	background:#ff0000;
+}

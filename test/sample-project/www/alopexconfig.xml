@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alopexconfig>
+	<pageList start="main">
+		<page id="main" uri="/uidef/main.html" type="local"
+			orientation="portrait|reversePortrait" changeOrientation="true"
+			skipPage="false" actionType="" container="" />
+		<page id="page1" uri="/uidef/foo/bar/page1.html" type="local"
+			orientation="portrait|reversePortrait|landscape|reverseLandscape"
+			changeOrientation="false" skipPage="false" actionType="" />
+		<page id="page2" uri="/uidef/foo/bar/page2.html" type="local"
+			orientation="portrait|reversePortrait|landscape|reverseLandscape"
+			changeOrientation="false" skipPage="false" actionType="" />
+		<page id="page3" uri="/uidef/foo/bar/page3.html" type="local"
+			orientation="portrait|reversePortrait|landscape|reverseLandscape"
+			changeOrientation="false" skipPage="false" actionType="" />
+		<page id="page4" uri="/uidef/foo/bar/page4.html" type="local"
+			orientation="portrait|reversePortrait|landscape|reverseLandscape"
+			changeOrientation="false" skipPage="false" actionType="" />
+	</pageList>
+</alopexconfig>
+

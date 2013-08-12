@@ -1,0 +1,72 @@
+//config은 Spring의 설정과 비슷하게 가 보자
+//Bean대신에 js module을 사용한다. 반드시 Bean단위의 js파일은 있어야 한다.
+//Bean에는 name(unique. interface명), class(모듈), 그리고 ref를 통해 다른 모듈 참조할 수 있다. 
+{
+  "server": { //server모듈과 관계된 Bean이다.
+    "module": "server", //module을 생략하면 lagopus default이다.
+    "port": 9009
+  },
+    
+  "template": {
+    "use_template": "true", //템플릿을 사용하지 않을 경우에는 html에 대해서 단순 파일 복사
+    "template_config":[
+     //TODO apache tiles 처럼 url pattern에 따라서 템플릿이 적용될 수 있도록 할 것. 정규식 사용
+        {
+          "url_pattern": "/.....", //url에 대한 정규식
+          "layout": "layout.ejs" //template 폴더 기준
+        },
+        {
+          "url_pattern": "/.....", //url에 대한 정규식
+          "layout": "foo/bar/layout.ejs" //다른 템플릿임.
+        }
+      ]
+    }
+  },
+  //generate
+  "generator":{
+    "skip":[
+               
+            ]
+    ,
+    //lagopus g 라고만 하면 다 돌아감.
+    //lagopus g default 라고 하면 default라는 이름의 프로파일로 generate됨.
+    "generate_profiles":
+      {
+       "default":{
+                   "output_dir": "output/www",
+                 }
+       }
+   },
+   
+   "plugins":{
+       "asset_handler":{ //js, css등의 static file을 그냥 copy하지 않고, minify/난독화 등 하고 싶을 경우.
+           {
+              "module": "uglify" //
+              "paths":
+                [
+                "js/app/**/*.js" //url pattern을 적용 가능할까? 편할 거 같은데. 이미 min된 js도 있기 때문에 선별적으로 적용 가능해야 한다.
+                ]
+           },
+           {
+             "module": "cssmin" //
+             "paths":
+               [
+               "css/app/**/*.css" //url pattern을 적용 가능할까? 편할 거 같은데. 
+               ]
+          }
+       }
+     
+       "generator_hooks":{
+           "custom_hook": "..." //매 파일 generate마다 hook을 걸 수 있음. 
+         
+       }
+      
+   },
+   
+   "deploy":{ //O&M deploy, FTP 등.
+     
+     
+   }
+
+
+}

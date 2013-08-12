@@ -1,0 +1,22 @@
+{
+  "output_dir": "output",
+  "server": { 
+    "port": 9009
+  },
+  "template": {
+    "use_template": "true",
+    "template_config":[
+     //TODO apache tiles 처럼 url pattern에 따라서 템플릿이 적용될 수 있도록 할 것. 정규식 사용
+        {
+          "url_pattern": "/.....", //url에 대한 정규식
+          "layout": "layout.ejs" //template 폴더 기준
+        },
+        {
+          "url_pattern": "/.....", //url에 대한 정규식
+          "layout": "foo/bar/layout.ejs" //다른 템플릿임.
+        }
+      ]
+    }
+  }
+
+}

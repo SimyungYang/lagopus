@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alopexconfig>
+  <pageList start="main">
+    <page id="main" uri="/uidef/main.html" type="local" orientation="portrait|reversePortrait" changeOrientation="true" skipPage="false" actionType="" container=""/>
+    <page id="apitest" uri="/uidef/apiTest/apitest.html" type="local" orientation="portrait|reversePortrait|landscape|reverseLandscape" changeOrientation="false" skipPage="false" actionType=""></page>
+   </pageList>
+</alopexconfig>
+
