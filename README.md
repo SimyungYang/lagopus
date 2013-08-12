@@ -1,6 +1,6 @@
 # Lagopus
 
-Alopex Runtime을 위한 간단한 명령어 도구입니다.(hello)
+Alopex Runtime을 위한 간단한 명령어 도구입니다.(hello). edited from github.
 
 ## Alopex Runtime을 위한 간단한 명령어 도구 
 
