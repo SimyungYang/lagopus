@@ -1,7 +1,6 @@
 # Lagopus
 
-Alopex Runtime을 위한 간단한 명령어 도구입니다.(hello). edited from github.
-commit by hotuna
+Alopex Runtime을 위한 간단한 명령어 도구입니다
 
 ## Alopex Runtime을 위한 간단한 명령어 도구 
 
@@ -16,7 +15,7 @@ Arctic Fox: 북극 여우. 학명: [Alopex Lagopus](http://en.wikipedia.org/wiki
 - Java 서블릿을 통한 템플릿 엔진인 Apache Tiles와 흡사한 기능의 가능성을 깨우쳐 준 [Express](http://expressjs.com)에 경의를 표합니다.
 
 ### Version
-0.0.4
+0.0.5
 
 ### Lagopus Feature(Prototype)
 
