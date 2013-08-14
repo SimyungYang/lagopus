@@ -12,7 +12,7 @@
     "template_config":[
      //TODO apache tiles 처럼 url pattern에 따라서 템플릿이 적용될 수 있도록 할 것. 정규식 사용
         {
-          "url_pattern": "/.....", //url에 대한 정규식
+          "url_pattern": "/customer/**/*.html", //url에 대한 정규식
           "layout": "layout.ejs" //template 폴더 기준
         },
         {
@@ -25,7 +25,7 @@
   //generate
   "generator":{
     "skip":[
-               
+             .svn, .git...
             ]
     ,
     //lagopus g 라고만 하면 다 돌아감.
